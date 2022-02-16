@@ -1,8 +1,8 @@
-# Image Basic Analysis
+# Image Basics
 
 ## Description:
 
-The package Image Basic Analysis have two modules **processing** and **utils**.
+The package Image Basics have two modules **processing** and **utils**.
 
 ### Processing Module
 
@@ -33,7 +33,7 @@ And can convert image like a numpy array or just display image
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Image Basic Analysis
 
 ```bash
-pip install image_basic
+pip install image_basics
 ```
 
 ## Usage
@@ -41,7 +41,7 @@ pip install image_basic
 ### histogram.py: match
 
 ```python
-from image_basic.processing import histogram
+from image_basics.processing import histogram
 
 source_image = 'path_to_source_image'	# Image that you want transform
 reference_image = 'path_to_referece_image' # Image Histogram to use like reference
@@ -53,8 +53,8 @@ matched = histogram.match(source_image, reference_image, plot = True)
 ### histogram.py: oriented_gradient
 
 ``` python	
-from image_basic.processing import histogram
-from image_basic.processing import imagereader as ir
+from image_basics.processing import histogram
+from image_basics.processing import imagereader as ir
 
 image = ir.ReadImage('image_path').as_array()
 hog_image = histogram.oriented_gradient(image)
